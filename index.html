@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sell it online</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- NAVBAR -->
+    <div class="header">
+        <div class="navbar">
+        <img width="80px" src="https://logos-world.net/wp-content/uploads/2022/04/OLX-Symbol.png" alt="">
+        <div class="country" id="countryName">
+            <div class="select">
+                <p id="text">select country</p>
+                <i class="fa-solid fa-chevron-down"></i>
+            </div>
+
+            <!-- options inside country -->
+            <ul class="options" id="names">
+                <li class="option" onclick="myfun('India')">
+                    <i class="fa-duotone fa-location-pin"></i>
+                    <p>India</p>
+                </li>
+
+                <li class="option" onclick="myfun('Bangladesh')">
+                    <i class="fa-duotone fa-location-pin"></i>
+                    <p>Bangladesh</p>
+                </li>
+
+                <li class="option" onclick="myfun('pakistan')">
+                    <i class="fa-duotone fa-location-pin"></i>
+                    <p>pakistan</p>
+                </li>
+
+                <li class="option" onclick="myfun('sri lanka')">
+                    <i class="fa-duotone fa-location-pin"></i>
+                    <p>Sri lanka</p>
+                </li>
+
+                <li class="option" onclick="myfun('aus')">
+                    <i class="fa-duotone fa-location-pin"></i>
+                    <p>Australia</p>
+                </li>
+            </ul>
+        </div>
+
+        <div class="searchBox">
+            <input type="text" class="search" id="searchId" placeholder="find cars,phones and more">
+            <p><i class="fa-duotone fa-magnifying-glass"></i></p>
+        </div>
+
+        <div class="language">
+            <p id="english"> English </p>
+
+            <ul class="hindi">
+                <li onclick="languageolx('English')"> English </li>
+                <li onclick="languageolx('hindi')">hindi</li>
+            </ul>
+        </div>
+
+        <div class="icon">
+            <i class="fa-regular fa-comment"></i>
+        </div>
+
+        <div class="icon">
+            <i class="fa-regular fa-bell"></i>
+        </div>
+
+        <div>
+            <p> <u>Login</u></p>
+        </div>
+
+
+        <div class="sell">
+            <button> <i class="fa-solid fa-plus"></i>
+                <p>SELL</p>
+            </button>
+        </div>
+    </div>
+    </div>
+    <div id="parent"></div>
+</body>
+</html>
+<script src="script.js"></script>
